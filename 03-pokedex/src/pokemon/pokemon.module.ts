@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Pokemon, PokemonSchema } from './entities/pokemon.entity';
-import { PokemonController } from './pokemon.controller';
-import { PokemonService } from './pokemon.service';
+import { Pokemon, PokemonSchema } from './entities/pokemon.entity.js';
+import { PokemonController } from './pokemon.controller.js';
+import { PokemonService } from './pokemon.service.js';
 
 @Module({
   controllers: [PokemonController],

@@ -6,9 +6,9 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { isValidObjectId, Model } from 'mongoose';
-import { CreatePokemonDto } from './dto/create-pokemon.dto';
-import { UpdatePokemonDto } from './dto/update-pokemon.dto';
-import { Pokemon } from './entities/pokemon.entity';
+import { CreatePokemonDto } from './dto/create-pokemon.dto.js';
+import { UpdatePokemonDto } from './dto/update-pokemon.dto.js';
+import { Pokemon } from './entities/pokemon.entity.js';
 
 @Injectable()
 export class PokemonService {
